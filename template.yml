@@ -30,10 +30,10 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /hola
+            Path: /spanish
             Method: get
         PostEvent:
           Type: Api
           Properties:
-            Path: /hola
+            Path: /spanish
             Method: post
