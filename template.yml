@@ -20,3 +20,20 @@ Resources:
           Properties:
             Path: /
             Method: post
+  HolaMundo:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: hola.handler
+      Runtime: python3.6
+      CodeUri: ./
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /hola
+            Method: get
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /hola
+            Method: post
