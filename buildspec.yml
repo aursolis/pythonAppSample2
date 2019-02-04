@@ -18,7 +18,7 @@ phases:
 
       # Use AWS SAM to package the application by using AWS CloudFormation
       # - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
-      - echo "hello this is the amazing master branch"
+      - echo "hello this is an amazing master branch"
 
 artifacts:
   type: zip
