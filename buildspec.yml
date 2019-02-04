@@ -11,7 +11,7 @@ phases:
     commands:
 
       # Use AWS SAM to package the application by using AWS CloudFormation
-      - echo "hello this is pr branch" 
+      - echo "hello this is pr/ branch" 
 
 artifacts:
   type: zip
