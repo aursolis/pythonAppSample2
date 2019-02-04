@@ -7,17 +7,18 @@ phases:
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
 
-  pre_build:
-    commands:
+  #pre_build:
+    #commands:
 
       # Discover and run unit tests in the 'tests' directory. For more information, see <https://docs.python.org/3/library/unittest.html#test-discovery>
-      - python -m unittest discover tests
+      # - python -m unittest discover tests
   
   build:
     commands:
 
       # Use AWS SAM to package the application by using AWS CloudFormation
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
+      # - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
+      - echo "hello this is master branch"
 
 artifacts:
   type: zip
